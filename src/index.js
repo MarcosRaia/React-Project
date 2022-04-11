@@ -1,11 +1,19 @@
 import React from 'react';
+import { render } from "react-dom";
 import ReactDOM from 'react-dom';
 import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Sobre from './Routes/sobre.jsx'
+import Ranking from './Routes/ranking.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="sobre" element={<Sobre />} />
+      <Route path="ranking" element={<Ranking />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

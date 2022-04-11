@@ -1,24 +1,23 @@
 import React from 'react';
-import { Form, Stack, Container, Button} from 'react-bootstrap';
+import { Form, Container, Button, Nav } from 'react-bootstrap';
 
 
 function FormComponent() {
     return <>
-
-        <Container className='p-8 h-100 mt-5'>
-            <p className='text-center p-8'>Faça seu Login</p>
-            <Stack gap={3}>
-                <div className="m-auto">
-                    <Form.Control className='w-100 mb-2' size="lg" type="text" placeholder="Login" />
-                    <Form.Control size="lg" type="text" placeholder="Senha" />
-                    <Form.Check className='d-flex justify-content-center mt-2' name="lembrar" label=" Lembrar de mim" type='radio' />
-                    <Button className="w-100 mb-2" variant="danger">Login</Button>
-                </div>
-
-            </Stack>
+        <Container className='m-auto mt-5 d-flex flex-column align-items-center p-2"'>
+            <h1 style={{ color: '#4A96D2' }} className='text-center p-8'>Faça seu Login</h1>
+            <div className="">
+                <Form.Control style={{ width: 'auto' }} className='mb-2 p-2' size="lg" type="text" placeholder="Digite seu e-mail" />
+            </div>
+            <div className="p-3">
+                <Form.Control style={{ width: 'auto' }} className='p-2' size="lg" type="text" placeholder="Digite sua senha" />
+            </div>
+            <div className="d-flex flex-column align-items-center">
+                <Form.Check style={{ color: 'white' }} className='' name="lembrar" label=" Lembrar de mim" type='radio' />
+                <Nav.Link style={{ color: '#64C2C8' }} className='' eventKey="link-1">Ainda não é cadastrado? Crie sua conta!</Nav.Link>
+                <Button style={{ width: '100%', backgroundColor: '#4A96D2' }} className="mb-2">Acessar</Button>
+            </div>
         </Container>
-
-
     </>
 }
 
