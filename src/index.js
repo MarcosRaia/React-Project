@@ -5,6 +5,8 @@ import App from './App';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Sobre from './Routes/sobre.jsx'
 import Ranking from './Routes/ranking.jsx';
+import Polos from './Routes/polos';
+import Publicacoes from './Routes/publicacoes';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -12,6 +14,8 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="sobre" element={<Sobre />} />
       <Route path="ranking" element={<Ranking />} />
+      <Route path="polos" element={<Polos />} />
+      <Route path="publicacoes" element={<Publicacoes />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
