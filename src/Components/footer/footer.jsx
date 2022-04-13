@@ -4,7 +4,7 @@ const Footer = () => {
     return <>
         <footer className="page-footer font-small blue pt-4">
             <div className="footer-copyright text-center py-3 text-white">
-                © 2020 Copyright: MackLeaps
+                © 2022 Copyright: Marcos Raia
             </div>
         </footer>
     </>

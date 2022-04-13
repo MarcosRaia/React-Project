@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Container, Button, Nav } from 'react-bootstrap';
-
+import {Link} from 'react-router-dom';
 
 function FormComponent() {
     return <>
@@ -14,7 +14,7 @@ function FormComponent() {
             </div>
             <div className="d-flex flex-column align-items-center">
                 <Form.Check style={{ color: 'white' }} className='' name="lembrar" label=" Lembrar de mim" type='radio' />
-                <Nav.Link style={{ color: '#64C2C8' }} className='' eventKey="link-1">Ainda não é cadastrado? Crie sua conta!</Nav.Link>
+                <Link style={{ color: '#64C2C8' }} className='' to ='/registrar' eventKey="link-1">Ainda não é cadastrado? Crie sua conta!</Link>
                 <Button style={{ width: '100%', backgroundColor: '#4A96D2' }} className="mb-2">Acessar</Button>
             </div>
         </Container>

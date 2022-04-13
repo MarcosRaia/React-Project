@@ -1,21 +1,21 @@
 import React from 'react';
-import { render } from "react-dom";
 import ReactDOM from 'react-dom';
 import App from './App';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Routes } from 'react-router-dom';
 import Sobre from './Routes/sobre.jsx'
 import Ranking from './Routes/ranking.jsx';
-import Polos from './Routes/polos';
-import Publicacoes from './Routes/publicacoes';
-
+import Polos from './Routes/polos.jsx';
+import Publicacoes from './Routes/publicacoes.jsx';
+import Register from './Routes/registrar.jsx'
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="sobre" element={<Sobre />} />
-      <Route path="ranking" element={<Ranking />} />
-      <Route path="polos" element={<Polos />} />
-      <Route path="publicacoes" element={<Publicacoes />} />
+      <Route exact path="/" element={<App />} />
+      <Route exact path="sobre" element={<Sobre />} />
+      <Route exact path="ranking" element={<Ranking />} />
+      <Route exact path="polos" element={<Polos />} />
+      <Route exact path="publicacoes" element={<Publicacoes />} />
+      <Route exact path="registrar" element={<Register />} />   
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
