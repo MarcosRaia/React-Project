@@ -3,7 +3,6 @@ import Footer from "../Components/footer/footer.jsx";
 import About from "../Components/Sobre/sobre.jsx";
 function Sobre() {
     return <>
-
         <NavComponent />
         <About />
         <Footer />
